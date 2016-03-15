@@ -156,7 +156,7 @@ public class APIController {
         String owner = request.getParameter("owner");
         String interfaceName = request.getParameter("interfaceName");
         String methodName = request.getParameter("methodName");
-        String version = request.getParameter("version");
+//        String version = request.getParameter("version");
         if (StringUtil.isBlank(owner)) {
             throw new SystemException("API提供者不能为空");
         }
