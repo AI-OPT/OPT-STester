@@ -104,37 +104,25 @@ eclipse {
 task copyReleaseLibs(type: Copy) { 
 	from(configurations.runtime)
 	destinationDir file("$buildDir/release/lib")
-	//copy{
-	//from(configurations.runtime)
-	//into("$buildDir/release/lib")
-	//}
+	
 }
 
 task copyReleaseConf(type: Copy) {  
 	from fileTree(dir: 'src/main/resources')
 	destinationDir file("$buildDir/release/conf") 
-	//copy{
-	//from fileTree(dir: 'src/main/resources')
-	//into("$buildDir/release/conf")
-	//}
+	
 }
 
 task copyReleaseBin(type: Copy) {  
 	from fileTree(dir: 'shell')
 	destinationDir file("$buildDir/release/bin")  
-	//// copy{
-	// from fileTree(dir: 'shell')
-	//into("$buildDir/release/bin") 
-	// }
+	
 }
 
 task copyReleaseWeb(type: Copy) {  
 	from fileTree(dir: 'src/main/webapp')
 	destinationDir file("$buildDir/release/src/main/webapp") 
-	//copy{
-	//from fileTree(dir: 'src/main/webapp')
-	//into ("$buildDir/release/src/main/webapp") 
-	//}
+	
 }
 jar {
     baseName baseName
