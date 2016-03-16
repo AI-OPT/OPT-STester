@@ -2,8 +2,12 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
+apply plugin:"jetty"
 
-compileJava.dependsOn clean
+ext {
+	baseName="opt-stester"
+	baseVersion="1.0"
+}
 
 sourceCompatibility = 1.7
 
@@ -14,11 +18,7 @@ configurations.all {
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 repositories {
-//    mavenLocal()
-    //mavenCentral()
     maven { url "http://10.1.228.199:18081/nexus/content/groups/public/" }
-    //maven { url "http://maven.oschina.net/content/groups/public/" }
-    //maven { url "http://maven.oschina.net/content/repositories/thirdparty/"}
 }
 
 dependencies {
@@ -97,6 +97,57 @@ eclipse {
             facet name: 'wst.jsdt.web', version: '1.0'
         }
     }
+}
+
+
+
+task copyReleaseLibs(type: Copy) { 
+	from(configurations.runtime)
+	destinationDir file("$buildDir/release/lib")
+	//copy{
+	//from(configurations.runtime)
+	//into("$buildDir/release/lib")
+	//}
+}
+
+task copyReleaseConf(type: Copy) {  
+	from fileTree(dir: 'src/main/resources')
+	destinationDir file("$buildDir/release/conf") 
+	//copy{
+	//from fileTree(dir: 'src/main/resources')
+	//into("$buildDir/release/conf")
+	//}
+}
+
+task copyReleaseBin(type: Copy) {  
+	from fileTree(dir: 'shell')
+	destinationDir file("$buildDir/release/bin")  
+	//// copy{
+	// from fileTree(dir: 'shell')
+	//into("$buildDir/release/bin") 
+	// }
+}
+
+task copyReleaseWeb(type: Copy) {  
+	from fileTree(dir: 'src/main/webapp')
+	destinationDir file("$buildDir/release/src/main/webapp") 
+	//copy{
+	//from fileTree(dir: 'src/main/webapp')
+	//into ("$buildDir/release/src/main/webapp") 
+	//}
+}
+jar {
+    baseName baseName
+    include "com/ai/opt/stest/*/**"
+    version baseVersion
+    destinationDir file("$buildDir/release/lib")
+	manifest {
+        attributes 'packageName': baseName, 'Built-By':  'gradle 2.2','create-date': new Date().format('yyyy-MM-dd HH:mm:ss')
+    }
+}
+task zipRelease(type: Zip,dependsOn:[jar,copyReleaseLibs,copyReleaseConf,copyReleaseBin,copyReleaseWeb]) {
+    baseName baseName
+    from "$buildDir/release/"
 }
 
 war {

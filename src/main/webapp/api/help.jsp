@@ -72,7 +72,7 @@
 									<p>&nbsp;&nbsp;离线测试工具旨在给您提供一个方便测试的平台，由于我们的平台是用java语言开发，所以您需要安装jdk，并配置好环境变量，安装清单如下：</p>
 									<ol>
 										<li>Jdk1.6+</li>
-										<li>OPT-STester</li>
+										<li>opt-stester.zip</li>
 									</ol>
 									<br>
 										<h4>
@@ -90,9 +90,8 @@
 														配置http端口：编辑conf/jetty.properties文件，找到属性jetty.connector.port配置开放的http端口，其他属性可根据自身需求可调整，属性上面都有说明。<span
 															style="color: red;">（注意：属性jetty.web.appRoots不可更改）</span>
 													</p></li>
-												<li><p>配置布署授权码：（布署授权码可在平台主页导航处找到“我的布署授权码”获得）编辑conf/project.properties文件，找到属性pro.dev.depAuthCode配置授权码。</p></li>
-												<li><p>配置代理：如果目标布署服务器不能直接访问平台，而需要通过代理的方式访问的话，可通配置conf/project.properties文件中属性pro.dev.needProxy、pro.dev.proxyHost、pro.dev.proxyPort来配置。</p></li>
-												<li><p>启动：执行./bin/start.sh即可。</p></li>
+												
+												<li><p>启动：如果是linux系统执行./bin/start.sh。</p></li>
 										</ol>
 										<h5>
 											<a id="step2.2" href="javascript:void(0);"><strong>2.1.轻松访问</strong></a>
