@@ -47,19 +47,19 @@
 											</h4></li>
 										<li><h4>
 												<a href="#step2">软件安装</a>
-											</h4> <a href="#step2.1"><span>2.1安装步骤</span></a><br> <a
-												href="#step2.2"><span>2.2轻松访问</span></a><br></li>
+											</h4> <a href="#step2.1"><span>2.1.安装步骤</span></a><br> <a
+												href="#step2.2"><span>2.2.轻松访问</span></a><br></li>
 										<li>
 											<h4>
 												<a href="#step3">使用说明</a>
-											</h4> <a href="#step3.1"><span>3.1离线服务导入</span></a><br> <a
-												href="#step3.2"><span>3.2离线服务测试</span></a><br>
+											</h4> <a href="#step3.1"><span>3.1.离线服务导入</span></a><br> <a
+												href="#step3.2"><span>3.2.离线服务测试</span></a><br>
 										</li>
 										<li>
 											<h4>
 												<a href="#step4">附录</a>
 											</h4> 
-											 <a href="#step4.1"><span>4.1发布MVNE API到“运营家服务在线”</span></a><br>
+											 <a href="#step4.1"><span>4.1.发布MVNE API到“运营家服务在线”</span></a><br>
 										 
 
 										</li>
