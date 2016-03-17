@@ -177,9 +177,7 @@
 																								height="400" width="80%"
 																								src="${_base}/resources/images/detail.png" /></li> <br>
 																<br>
-																	<li>服务测试：我们提供了“<font color="red">dubbo</font>”和“<font
-																		color="red">rest</font>”两种形式的服务测试（如下图）;如果有的服务显示“<font
-																		color="red">无模板</font>”，则需要到“<font color="red">运营家服务在线</font>”下载最新的服务数据。
+																	<li>服务测试：我们提供了“<font color="red">dubbo</font>”和“<font color="red">rest</font>”两种形式的服务测试（如下图）;
 																</li> <br> &nbsp;&nbsp;&nbsp;<img height="400"
 																		width="80%" src="${_base}/resources/images/test.png" />
 																		<br> <br>
@@ -213,7 +211,7 @@
 											</h5>
 											<ol>
 												<li>
-													修改基础工程，找到ibss-util-project工程，编辑build.gradle文件，在其中添加一个task，如下：
+													修改基础工程，找到<font color="red">ibss-util-project</font>工程，编辑build.gradle文件，在其中添加一个task，如下：
 													<br> <br> <img height="200" width="80%"
 															src="${_base}/resources/images/baseTask.png" /> <br>
 																<br> 在执行打jar包的命令里添加： 
@@ -226,10 +224,10 @@
 
 												<li>修改各个后场工程 <br>
 
-														以ibss-channels-project为例：找到build.gradle文件，添加一个maven私服仓库<font
-														color="red">“ maven { url
+														以<font color="red">ibss-channels-project</font>为例：找到build.gradle文件，添加一个maven私服仓库“<font
+														color="red"> maven { url
 															"http://10.1.228.199:18081/nexus/content/groups/public/"
-															}”</font>, 找到其子工程chennels-dubbo,修改其build.gradle文件.
+															}</font>”, 找到其子工程chennels-dubbo,修改其build.gradle文件.
 															 <br> 
 															<textarea style="width: 95%; height: 500px;">
 apply plugin: "APICollector"
