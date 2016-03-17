@@ -229,7 +229,7 @@
 															"http://10.1.228.199:18081/nexus/content/groups/public/"
 															}</font>”, 找到其子工程chennels-dubbo,修改其build.gradle文件.
 															 <br> 
-															<textarea style="width: 95%; height: 500px;">
+															<textarea style="width: 95%; height: 500px;" readonly="readonly">
 apply plugin: "APICollector"
 apply plugin: "APIJarProcess"
 
