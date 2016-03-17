@@ -367,6 +367,11 @@ publishing {
 										
 										
 										                     </textarea>
+										                     
+										                     <br>
+修改完毕后则只需要执行gradle api2doc，就可以将API发布到“运营家服务在线”上面去。发布后的效果如下：
+ <br> <br>
+                                    <img height="400" width="80%" src="${_base}/resources/images/xiaoguo.png" />
 										</li>
 									   </ol>
 										
