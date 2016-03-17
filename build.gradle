@@ -71,6 +71,7 @@ dependencies {
 	compile 'com.naomi:binary-application:0.0.1-SNAPSHOT'
 	compile 'org.codehaus.groovy:groovy-all:2.4.0'
 	compile 'org.apache.lucene:lucene-expressions:4.10.2'
+	//jetty依赖的jsp包，如果本地用tomcat启动则需要将下面jetty的依赖注释掉
 	compile 'org.mortbay.jetty:jsp-2.1-jetty:6.1.26'
 	
 	//org.codehaus.groovy/groovy-all/2.4.0
