@@ -78,7 +78,8 @@
 									<p>&nbsp;&nbsp;离线测试工具旨在给您提供一个方便测试的平台，由于我们的平台是用java语言开发，所以您需要安装jdk，并配置好环境变量，安装清单如下：</p>
 									<ol>
 										<li>Jdk1.6+</li>
-										<li>opt-sester.zip</li>
+										<li>opt-stester.zip
+										</li>
 									</ol>
 									<br>
 										<h4>
