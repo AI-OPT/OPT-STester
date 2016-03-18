@@ -239,7 +239,7 @@ configurations {
 }
 
 dependencies {
-    jaxDoclet 'com.ai.runner.plugin:apicollector:1.3-SNAPSHOT'
+    jaxDoclet 'com.ai.runner.plugin:apicollector:1.4-SNAPSHOT'
     runnerBaseSource 'com.ailk.mvno.crm.api:crm-dubbo-api-base:3.3:sources'
  
 }
